@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skipper Tran - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 40px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">ST</div>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#photography">Photography</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Skipper Tran</h1>
+            <p class="subtitle">Computer Science Student | Cybersecurity Enthusiast | Photography Lover</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SguMwXKYs2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h3>Project 1</h3>
+                        <p>A brief about my photography journey for my final highschool capstone project where I displayed my works throughout the years as well as the progressions in my hobby.</p>
+                        <a href="#" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VGGSUmXWA8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h3>Project 2</h3>
+                        <p>A video about the beauty of the city of Port Coquitlam as well as the surrounding natural environment.</p>
+                        <a href="#" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photography">
+            <h2>Photography</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Nature Collection</h3>
+                        <p>A collection showcasing the beauty of BC natural wildlife birds in their habitats.</p>
+                        <div class="image-gallery">
+                            <img src="IMGL6317.png" alt="Nature photo 1">
+                            <img src="IMGL6907.png" alt="Nature photo 2">
+                            <img src="IMGL7265.png" alt="Nature photo 3">
+                            <img src="IMGL7338.png" alt="Nature photo 4">
+                            <img src="IMGL7942.png" alt="Nature photo 5">
+                            <img src="IMGL8052.png" alt="Nature photo 6">
+                            <img src="IMGL7827.png" alt="Nature photo 7">
+                            <img src="IMGL6998.png" alt="Nature photo 8">
+                            <img src="IMGL8476.png" alt="Nature photo 9">
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                </div> 
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Urban Collection</h3>
+                        <p>Capturing the essence of city life through architecture and street photography.</p>
+                        <div class="image-gallery">
+                            <img src="IMGL1111.png" alt="Urban photo 1">
+                            <img src="IMGL1112.png" alt="Urban photo  2">
+                            <img src="IMGL1113.png" alt="Urban photo o 3">
+                            <img src="IMGL1114.png" alt="Urban photo o o 4">
+                            <img src="IMGL1115.png" alt="Urban photo o 5">
+                            <img src="IMGL1116.png" alt="Urban photo o 6">
+                <!-- Urban Collection card remains unchanged -->
+            </div>
+        </section>
+
+        <style>
+            /* Add this to your existing CSS */
+            .image-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                transition: transform 0.3s ease;
+            }
+
+            .image-gallery img:hover {
+                transform: scale(1.05);
+            }
+        </style>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Skipper Tran, a Computer Science student at Western University. I'm passionate about cybersecurity and photography, always looking to expand my knowledge and skills in these areas. My goal is to contribute to the field of computer science while exploring the world through my camera lens.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Skipper Tran. All rights reserved.</p>
+    </footer>
+</body>
+</html>
